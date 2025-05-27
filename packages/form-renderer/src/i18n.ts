@@ -9,7 +9,9 @@ export function initI18n(fallbackLng = 'en', customLocales?: AnyMap) {
 
   i18n.use(initReactI18next).init({
     lowerCaseLng: true,
-    supportedLngs: Object.keys(resources),
+    // supportedLngs: Object.keys(resources),
+    // Only supporting English for now to avoid inconsistencies with the form builder (questions in English but labels in German if user browser language is German)
+    supportedLngs: ['en'],
     fallbackLng,
     resources,
     interpolation: {
