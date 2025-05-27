@@ -10,38 +10,42 @@ import es from './es'
 import ptBr from './pt-br'
 import cs from './cs'
 
+// Only support English for now to avoid inconsistencies with the form builder
+// (questions in English but labels in German if user browser language is German)
+const translation = en;
+
 export const locales: Record<string, any> = {
   en: {
-    translation: en
+    translation,
   },
   fr: {
-    translation: fr
+    translation,
   },
   de: {
-    translation: de
+    translation,
   },
   es: {
-    translation: es
+    translation,
   },
   ja: {
-    translation: ja
+    translation,
   },
   pl: {
-    translation: pl
+    translation,
   },
 	'pt-br': {
-    translation: ptBr
+    translation,
   },
   tr: {
-    translation: tr
+    translation,
   },
   'zh-cn': {
-    translation: zhCn
+    translation,
   },
   'zh-tw': {
-    translation: zhTw
+    translation,
   },
   cs: {
-    translation: cs
+    translation,
   }
 }

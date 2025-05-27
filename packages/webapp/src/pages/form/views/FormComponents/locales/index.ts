@@ -9,35 +9,39 @@ import zhCn from './zh-cn'
 import zhTw from './zh-tw'
 import cs from './cs'
 
+// Only support English for now to avoid inconsistencies with the form builder
+// (questions in English but labels in German if user browser language is German)
+const translation = en;
+
 export default {
   en: {
-    translation: en
+    translation,
   },
   fr: {
-    translation: fr
+    translation,
   },
   de: {
-    translation: de
+    translation,
   },
   es: {
-    translation: es
+    translation,
   },
   pl: {
-    translation: pl
+    translation,
   },
   'pt-br': {
-    translation: ptBr
+    translation,
   },
   tr: {
-    translation: tr
+    translation,
   },
   'zh-cn': {
-    translation: zhCn
+    translation,
   },
   'zh-tw': {
-    translation: zhTw
+    translation,
   },
   cs: {
-    translation: cs
+    translation,
   },
 }
